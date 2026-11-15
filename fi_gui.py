@@ -11,9 +11,12 @@ Workflow
   4. "Inject & run" (or step through cycle by cycle) and compare with the golden run
   5. Campaign tab: thousands of random injections -> outcome statistics per component
 """
+
 import queue
 import random
 import threading
+import os
+os.environ["TK_SILENCE_DEPRECATION"] = "1"
 import tkinter as tk
 import tkinter.font as tkfont
 from tkinter import filedialog, messagebox, ttk
